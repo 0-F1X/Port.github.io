@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color: #202020;
+    position: relative;
+    height: auto;
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .container .sec h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+footer .container .sec p {
+    color: #fff;
+}
+
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.sci li a .bi-facebook:hover {
+    color: #0d1c3b;
+}
+
+.sci li a .bi-twitter:hover {
+    color: #00acee;
+}
+
+.sci li a .bi-instagram:hover {
+    color: rgb(236, 14, 217);
+}
+
+.sci li a .bi-youtube:hover {
+    color: #bb0000;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+
+.quicklinks li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: #11708c;
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span {
+    color: #fff;
+}
+
+.info li span:nth-child(1) {
+    color: #fff;
+    font-size: 25px;
+}
+
+.info a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #11708c;
+}
+
+.copyrightText {
+    width: 100%;
+    background-color: #202020;
+    /*INSTAGRAM*/
+    padding: 8px 100px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

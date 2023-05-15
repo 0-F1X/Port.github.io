@@ -1,0 +1,45 @@
+
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: #222;
+    overflow: hidden;
+}
+
+.line {
+    display: inline-block;
+    width: 10px;
+    height: 40px;
+    background: #b6b6b6;
+    border-radius: 10px;
+    animation: animate 1s linear infinite;
+}
+
+.line:nth-child(2) {
+    margin: 0 5px;
+    height: 70px;
+    animation-delay: 0.25s;
+}
+
+.line:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+@keyframes animate {
+    20% {
+        background-color: #fff;
+        transform: scaleY(1.5);
+    }
+
+    40% {
+        transform: scaleY(1);
+    }
+
+    80% {
+        transform: scaleY(0.8);
+    }
+}

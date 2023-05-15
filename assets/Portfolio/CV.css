@@ -1,0 +1,156 @@
+.Login{
+    width: 35%;
+    margin-left: 100px;
+}
+
+.Retour{
+    display:flex;
+} 
+
+.Home{
+    width: 15px;
+}
+
+.Back{
+    letter-spacing: 1px;
+    color: rgb(42, 49, 56);
+    margin-left: 40px;
+}
+
+body{
+    font-family: "Century Gothic", Calibri , serif;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+} 
+
+.h1{
+    margin-left: 302px;
+}
+
+.h2{
+    margin-left: 302px; 
+}
+
+h1{ 
+    color: darkslategrey;
+    font-family: cursive; 
+    font-size: 40px;
+    font-weight: normal; 
+    text-align: center; 
+}
+
+h2{
+    color: darkslategrey;
+    font-family: cursive; 
+    font-size: 40px;
+    font-weight: normal; 
+    text-align: center;
+}
+
+header{
+    display: flex;
+    height: 100px;
+}
+
+footer{ 
+    font-family: cursive; 
+    font-size: 12px;
+    height: 80px;
+    padding-top: 30px;
+    text-align: center; 
+    background-color: #C5C5C5; 
+    border-top: 2px solid #AAA; 
+} 
+
+
+.Présentation{
+    border-top: 5px solid #4C8;
+    background-color: RGBa(64, 200, 130, 0.15);
+}
+
+.Parcours{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.Compétence{
+    border-top: 5px solid #0070BB;
+    background-color: RGBa(000, 112, 192, 0.15); 
+}
+
+.Recommandation{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+ 
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sec{
+    margin: 0px 10%;
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: left;
+    width: 70%;
+}
+
+.sousleft, .sousright{
+    width: 50%;
+    float: left; 
+}
+
+.sec::after, .exp::after, .reco::after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+.fyh{
+    width: 50%; 
+    margin: 5px 0px 0px 5px;
+}  
+
+.fyx, .mih{
+    width: 30%;
+    margin-left: 5px; 
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-style: italic; 
+    font-size: small;
+}
+
+@media screen and (max-width : 1024px){
+    header{
+        height: 50px;
+    } 
+    h1{ 
+        font-family: cursive; 
+        font-size: 20px;
+        font-weight: normal; 
+        text-align: center; 
+        margin: 20px 0px 0px 0px;
+    } 
+    h2{
+        font-family: cursive; 
+        font-size: 20px;
+        font-weight: normal; 
+        margin: 0px 0px 0px 0px;
+    }
+    .h2{
+        margin-left: 10px; 
+    }
+}
